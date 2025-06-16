@@ -450,16 +450,16 @@
 
 
   //skill bar 
-  window.addEventListener('DOMContentLoaded', function () {
-    const circle = new CircularProgressBar('pie');
+  // window.addEventListener('DOMContentLoaded', function () {
+  //   // const circle = new CircularProgressBar('pie');
 
-    setInterval(() => {
-      const options = {
-        percent: Math.floor((Math.random() * 100) + 1)
-      }
-      circle.animationTo(options);
-    }, 2000);
-  });
+  //   setInterval(() => {
+  //     const options = {
+  //       percent: Math.floor((Math.random() * 100) + 1)
+  //     }
+  //     // circle.animationTo(options);
+  //   }, 2000);
+  // });
 
 
 

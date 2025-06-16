@@ -56,7 +56,7 @@ const HomePage = () => {
 <section className="banner-section oh bg_img">
   <div className="top-shape-content d-none d-xl-block">
     <motion.img
-      src="assets/images/banner3.jpg"
+      src={BannerImageSrc}
       alt="banner"
       className="bs-item"
       data-value={-3}
