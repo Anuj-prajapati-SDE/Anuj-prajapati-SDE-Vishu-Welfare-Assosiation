@@ -309,7 +309,7 @@
             slidesToShow: 1
           }
         },
-        
+
       ]
     });
     $('.clients-next').on('click', function (e) {
