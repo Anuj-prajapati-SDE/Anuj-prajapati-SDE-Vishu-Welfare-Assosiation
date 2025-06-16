@@ -79,7 +79,7 @@ const DonationPage = () => {  const [donationAmount, setDonationAmount] = useSta
     };
   }, []);
 
-  return (
+  return ( 
     <>
       <Navbar />
       
