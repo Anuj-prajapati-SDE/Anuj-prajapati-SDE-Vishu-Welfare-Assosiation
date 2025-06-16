@@ -1,0 +1,524 @@
+/* What Sets Us Apart Page Styles */
+
+.what-sets-us-apart-section {
+  padding: 80px 0;
+  background-color: #fffaf7;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title .cate {
+  color: #fa8917;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section-title h2 {
+  color: #0e2c53;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  color: #707070;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Key Differences Section */
+.key-differences {
+  margin-bottom: 60px;
+}
+
+.difference-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-top: 4px solid #ff9935;
+  transition: all 0.3s ease;
+}
+
+.difference-card:hover {
+  transform: translateY(-8px);
+  border-top: 4px solid #ff9935;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.difference-card .icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(146, 39, 143, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.difference-card .icon i {
+  font-size: 28px;
+  color: #ff9935;
+}
+
+.difference-card h3 {
+  color: #0e2c53;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.difference-card p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Values Section */
+.our-values {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.value-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+ border-color: #ff8e1d;
+  transform: translateY(-5px);
+}
+
+.value-card .icon {
+  width: 80px;
+  height: 80px;
+  background: #ff9935;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.value-card .icon i {
+  font-size: 32px;
+  color: #fff;
+}
+
+.value-card h4 {
+  color: #0e2c53;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: #707070;
+  font-size: 16px;
+}
+
+/* Approach Section */
+.our-approach {
+  padding: 60px 0;
+}
+
+.approach-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.approach-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.approach-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(146, 39, 143, 0.8), rgba(10, 61, 98, 0.8));
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.approach-image:hover::before {
+  opacity: 0.7;
+}
+
+.approach-content h3 {
+  color: #0e2c53;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.approach-content p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.approach-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.approach-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  color: #192e41;
+  font-size: 16px;
+}
+
+.approach-list li::before {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #ff9935;
+}
+
+.approach-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff9935;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.approach-btn:hover {
+  background-color: #f6881b;
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+/* Impact Section */
+.our-impact {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.impact-counter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.impact-counter .value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #92278f;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.impact-counter .label {
+  font-size: 18px;
+  color: #0e2c53;
+  font-weight: 600;
+}
+
+.impact-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.impact-text p {
+  font-size: 18px;
+  color: #707070;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  background-color: #ff9935;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #fa8917;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 0;
+}
+
+.testimonial-slider {
+  position: relative;
+  margin: 0 30px;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin: 15px;
+}
+
+.testimonial-content {
+  font-size: 16px;
+  color: #707070;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.testimonial-author-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-author-info h5 {
+  color: #0e2c53;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.testimonial-author-info span {
+  color: #92278f;
+  font-size: 14px;
+}
+
+/* Awards & Recognitions */
+.awards {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.award-item {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-5px);
+}
+
+.award-logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.award-logo img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.award-info h4 {
+  color: #0e2c53;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.award-info p {
+  color: #707070;
+  font-size: 14px;
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(to right, #ffc387, #ff8e1d);
+  color: #fff;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary {
+  padding: 14px 35px;
+  background-color: #fff;
+  color: #92278f;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #eee;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  padding: 12px 30px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #ff9935;
+  transform: translateY(-3px);
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .section-title h2 {
+    font-size: 36px;
+  }
+  
+  .approach-content {
+    margin-top: 30px;
+  }
+  
+  .approach-content h3 {
+    font-size: 28px;
+  }
+  
+  .cta-content h2 {
+    font-size: 32px;
+  }
+  
+  .impact-counter .value {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .what-sets-us-apart-section {
+    padding: 60px 0;
+  }
+  
+  .section-title h2 {
+    font-size: 30px;
+  }
+  
+  .difference-card {
+    margin-bottom: 20px;
+  }
+  
+  .difference-card h3 {
+    font-size: 20px;
+  }
+  
+  .value-card {
+    margin-bottom: 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .impact-counter .value {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 26px;
+  }
+  
+  .difference-card .icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .difference-card .icon i {
+    font-size: 24px;
+  }
+  
+  .approach-content h3 {
+    font-size: 24px;
+  }
+  
+  .cta-content h2 {
+    font-size: 28px;
+  }
+  
+  .cta-content p {
+    font-size: 16px;
+  }
+  
+  .btn-primary, .btn-outline {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+}
