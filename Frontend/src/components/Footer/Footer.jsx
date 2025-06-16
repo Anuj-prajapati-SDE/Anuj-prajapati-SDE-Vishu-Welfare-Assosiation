@@ -1,4 +1,10 @@
 import React from 'react'
+import icon_1 from '../../assets/images/footer/icon/01.png'
+import icon_2 from '../../assets/images/footer/icon/02.png'
+import icon_3 from '../../assets/images/footer/icon/03.png'
+import BlogImg_1 from '../../assets/images/footer/blog1.png'
+import BlogImg_2 from '../../assets/images/footer/blog2.png'
+
 
 const Footer = () => {
   return (
@@ -12,7 +18,7 @@ const Footer = () => {
               <div className="ftt-inner">
                 <div className="ftt-thumb">
                   <img
-                    src="./src/assets/images/footer/icon/01.png"
+                    src={icon_1}
                     alt="footer-icon"
                   />
                 </div>
@@ -27,7 +33,7 @@ const Footer = () => {
               <div className="ftt-inner">
                 <div className="ftt-thumb">
                   <img
-                    src="./src/assets/images/footer/icon/02.png"
+                    src={icon_2}
                     alt="footer-icon"
                   />
                 </div>
@@ -42,7 +48,7 @@ const Footer = () => {
               <div className="ftt-inner">
                 <div className="ftt-thumb">
                   <img
-                    src="./src/assets/images/footer/icon/03.png"
+                    src={icon_3}
                     alt="footer-icon"
                   />
                 </div>
@@ -82,7 +88,7 @@ const Footer = () => {
                       <div className="thumb">
                         <a href="blog-single.html">
                           <img
-                            src="./src/assets/images/footer/blog1.png"
+                            src={BlogImg_1}
                             alt="footer"
                           />
                         </a>
@@ -99,7 +105,7 @@ const Footer = () => {
                       <div className="thumb">
                         <a href="blog-single.html">
                           <img
-                            src="./src/assets/images/footer/blog2.png"
+                            src={BlogImg_2}
                             alt="footer"
                           />
                         </a>

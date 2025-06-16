@@ -1,5 +1,5 @@
 (function ($) {
-  "user strict";
+  // "user strict";
   // Preloader Js
   $(window).on('load', function () {
     $('.overlayer').fadeOut(1000);
