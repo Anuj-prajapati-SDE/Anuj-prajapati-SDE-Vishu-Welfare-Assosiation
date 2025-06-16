@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import emailjs from 'emailjs-com' 
 import HeroSection from '../../components/HeroSection/HeroSection'
+import Banner from '../../assets/images/banners/banner_1.jpg'
 import { ContactImage1Src,ContactImage2Src, ContactImage3Src, ContactImage4Src  } from '../../assets/images'
 
 const ContactPage = () => {
@@ -38,7 +39,7 @@ const ContactPage = () => {
 <>
   <Navbar/>
   <>
-  <HeroSection Tittle={'Our Contact'} Heading={'Home - Contact'}/>
+  <HeroSection Tittle={'Our Contact'} Heading={'We’re always happy to connect. Whether you have a question, suggestion, or wish to support our mission, feel free to reach out. Let’s work together for a better tomorrow.'} Banner={`${Banner}`}/>
   {/* ==========Banner Section Ends Here========== */}
   {/* ==========Contact Section Starts Here========== */}
   <section className="contact-section padding-top padding-bottom">

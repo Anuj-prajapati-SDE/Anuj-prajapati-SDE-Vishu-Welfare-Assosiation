@@ -15,6 +15,8 @@ import UnderMaintenancePage from './pages/Error/UnderMaintenancePage';
 import DonationPage from './pages/Donation/DonationPage';
 import VolunterPage from './components/volunter/VolunterPage';
 import PartnerPage from './pages/Partner/PartnerPage';
+import OurWorkArea from './pages/OurWorkArea/OurWorkArea';
+import Careers from './pages/Careers/CareersPage';
 function App() {
 
   return (
@@ -28,8 +30,10 @@ function App() {
               <Route path="/mission-vesion" element={<MissionVesionPage/>} />
               <Route path="/our-leadership" element={<LeaderShipPage/>} />
               <Route path="/contact" element={<ContactPage/>} />
+              <Route path="/careers" element={<Careers/>} />
               <Route path="/volunters" element={<VolunterPage/>} />
               <Route path="/gallery" element={<GalleryPage/>} />
+              <Route path="/our-work-area" element={<OurWorkArea/>} />
               <Route path="/privary-policy" element={<PrivaryPage/>} />
               <Route path="/terms-condition" element={<TermConditionPage/>} />
               <Route path="/under-maintenance" element={<UnderMaintenancePage/>} />

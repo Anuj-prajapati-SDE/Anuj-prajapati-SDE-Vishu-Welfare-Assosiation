@@ -99,7 +99,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <a href="/under-maintenance" className="active">
+                <a  className="active">
                   Get Involve
                 </a>
                   <ul className="submenu">                  <li>
@@ -111,10 +111,10 @@ const Navbar = () => {
                     <a href="/volunters">Volunter</a>
                   </li>
                   <li>
-                    <a href="/under-maintenance">Carrier </a>
+                    <a href="/careers">Careers </a>
                   </li>
                   <li>
-                    <a href="/under-maintenance">Donor</a>
+                    <a href="/donate">Donor</a>
                   </li>
                 </ul>
               </li>
@@ -129,7 +129,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="/under-maintenance" className="active">
+                <a href="/our-work-area" className="active">
                   Our Work Area
                 </a>
               </li>

@@ -15,7 +15,7 @@ const DonationPage = () => {  const [donationAmount, setDonationAmount] = useSta
     city: '',
     state: '',
     zipCode: '',
-    country: 'India',
+    country: 'India', 
     anonymous: false,
     message: ''
   });
@@ -84,7 +84,7 @@ const DonationPage = () => {  const [donationAmount, setDonationAmount] = useSta
       <Navbar />
       
       {/* ==========Banner Section Starts Here========== */}
-      <section
+      {/* <section
         className="page-header bg_img"
         data-background="assets/images/banner/page-header.jpg"
       >
@@ -99,7 +99,7 @@ const DonationPage = () => {  const [donationAmount, setDonationAmount] = useSta
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* ==========Banner Section Ends Here========== */}
 
       {/* ==========Donation Section Starts Here========== */}
