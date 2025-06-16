@@ -54,17 +54,6 @@ const HomePage = () => {
 
    {/* <!-- ==========Banner Section Starts Here========== --> */}
 <section className="banner-section oh bg_img">
-  <div className="top-shape-content d-none d-xl-block">
-    <motion.img
-      src={BannerImageSrc}
-      alt="banner"
-      className="bs-item"
-      data-value={-3}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    />
-  </div>
   <div className="container">
     <div className="d-flex justify-content-between flex-row-reverse">
       <div className="banner-thumb">
