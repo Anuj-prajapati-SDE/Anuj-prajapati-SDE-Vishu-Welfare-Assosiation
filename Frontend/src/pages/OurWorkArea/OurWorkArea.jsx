@@ -16,7 +16,7 @@ const OurWorkArea = () => {
     padding: '2rem 1rem',
     backgroundColor: '#f8f9fa',
     backgroundImage: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
-  };
+  };  
 
   const gridStyle = {
     display: 'grid',
