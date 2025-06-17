@@ -10,7 +10,7 @@ import HeroSection from '../../components/HeroSection/HeroSection';
 import ashish from "../../assets/images/teams/ashish.jpg"
 import ankit from "../../assets/images/teams/ankit.jpg"
 import deepanshi from "../../assets/images/teams/deepanshi.jpg"
-import anuj from "../../assets/images/teams/anuj.jpg"
+
 import binit from "../../assets/images/teams/binit.jpg"
 import anand from "../../assets/images/teams/anand.jpg"
 import avnish from "../../assets/images/leaders/avnish.jpg"
