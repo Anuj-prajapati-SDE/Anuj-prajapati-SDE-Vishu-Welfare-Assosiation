@@ -9,7 +9,7 @@ import Banner_img from '../../assets/images/banners/banner_2.jpg';
 import { useInView } from "react-intersection-observer";
 import Ankit from "../../assets/images/leaders/ankit.jpg";
 import Binit from "../../assets/images/leaders/binit.jpg"
-import Avnish from "../../assets/images/leaders/avnish.jpg"
+import Avnish from "../../assets/images/leaders/avnish.JPG"
 import Anand from "../../assets/images/leaders/anand.jpg"
 
 import "./AboutPage.css";
