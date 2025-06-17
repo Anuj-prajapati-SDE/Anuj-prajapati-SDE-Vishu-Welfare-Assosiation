@@ -13,7 +13,7 @@ import deepanshi from "../../assets/images/teams/deepanshi.jpg"
 
 import binit from "../../assets/images/teams/binit.jpg"
 import anand from "../../assets/images/teams/anand.jpg"
-import avnish from "../../assets/images/leaders/avnish.jpg"
+import avnish from "../../assets/images/leaders/avnish.JPG"
 
 const LeaderShipPage = () => {
 
