@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Educational from "../../assets/images/work/educational-livelihood.jpg";
 import Food from "../../assets/images/work/food-donation.jpg"
-import Health from "../../assets/images/work/health.jpeg"
+import Health from "../../assets/images/work/health.jpg"
 import Plantation from "../../assets/images/work/plantation-photo.jpg"
 import HeroSection from '../../components/HeroSection/HeroSection'
 import Banner from '../../assets/images/banners/banner_6.jpg'

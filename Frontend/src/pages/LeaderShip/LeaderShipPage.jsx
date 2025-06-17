@@ -16,6 +16,11 @@ import anand from "../../assets/images/teams/anand.jpg"
 import avnish from "../../assets/images/leaders/avnish.JPG"
 
 const LeaderShipPage = () => {
+   const imgStyle = {
+  height: '450px',
+  width: '100%',
+  objectFit: 'cover'
+};
 
 
   const [introRef, introInView] = useInView({
@@ -141,8 +146,8 @@ const LeaderShipPage = () => {
                     className="executive-card"
                     style={{marginTop:"2rem"}}
                   >
-                    <div className="executive-card-image">
-                      <img src={member.image} alt={member.name} />
+                    <div className="executive-card-image"style={{objectFit: 'cover'}} >
+                      <img src={member.image} alt={member.name} style={imgStyle} />
                       <div className="executive-card-overlay"></div>
                       <div className="executive-card-social">
                        

@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { motion } from "framer-motion";
+import sonali from "../../assets/images/volunteer/sonali.jpg"
+import tamana from "../../assets/images/volunteer/tamana.jpg"
+import nitesh from "../../assets/images/volunteer/nitesh.jpg"
+import babita from "../../assets/images/volunteer/babita.jpg"
+import plantation from "../../assets/images/work/plantation-photo.jpg"
+import education from "../../assets/images/work/educational-livelihood.jpg"
+import foodDonation from "../../assets/images/work/food-donation.jpg"
+import health from "../../assets/images/work/health.jpg"
+
+
 import {
   BannerImageSrc,
   FeatureBgImage1Src,
@@ -45,9 +55,21 @@ import {
 const HomePage = () => {
    const [isTextVisible, setIsTextVisible] = useState(false);
 
+   const imgStyle = {
+  height: '485px',
+  width: '100%',
+  objectFit: 'cover'
+};
+
   const handleClick = () => {
     setIsTextVisible(!isTextVisible);
   };
+
+  const imgStyleforWork = {
+  height: '250px',
+  width: '100%',
+  objectFit: 'cover'
+};
   return (
     <>
       <Navbar></Navbar>
@@ -658,7 +680,7 @@ const HomePage = () => {
               <div className="project-item style-2">
                 <div className="project-inner mb-0">
                   <div className="project-thumb"> 
-                    <img src={ProjectImage1Src} alt="project" />
+                    <img src={education} alt="project" style={imgStyleforWork}/>
                   </div>
                   <div className="project-content">
                     <a href="/education-livelihood">
@@ -675,7 +697,7 @@ const HomePage = () => {
               <div className="project-item style-2">
                 <div className="project-inner mb-0">
                   <div className="project-thumb">
-                    <img src={ProjectImage2Src} alt="project" />
+                    <img src={health} alt="project" style={imgStyleforWork} />
                   </div>
                   <div className="project-content">
                     <a href="/health-awareness">
@@ -692,7 +714,7 @@ const HomePage = () => {
               <div className="project-item style-2">
                 <div className="project-inner mb-0">
                   <div className="project-thumb">
-                    <img src={ProjectImage3Src} alt="project" />
+                    <img src={plantation} alt="project" style={imgStyleforWork}/>
                   </div>
                   <div className="project-content">
                     <a href="/plantation">
@@ -709,7 +731,7 @@ const HomePage = () => {
               <div className="project-item style-2">
                 <div className="project-inner mb-0">
                   <div className="project-thumb">
-                    <img src={ProjectImage4Src} alt="project" />
+                    <img src={foodDonation} alt="project" style={imgStyleforWork}/>
                   </div>
                   <div className="project-content">
                     <a href="/food-for-poor-children">
@@ -871,14 +893,15 @@ const HomePage = () => {
                       <div className="thumb">
                         <a href="volunteer-single.html">
                           <img
-                            src={TeamImage2Src}
+                            src={sonali}
                             alt="volunteer"
+                            style={imgStyle}
                           />
                         </a>
                       </div>
                       <div className="content pos-rel">
                         <h5 className="title">
-                          <a href="volunteer-single.html">Mr. Hemant</a>
+                          <a href="volunteer-single.html">Mrs. Sonali</a>
                         </h5>
                         <span>Volunteer</span>
                       </div>
@@ -921,14 +944,15 @@ const HomePage = () => {
                       <div className="thumb">
                         <a href="volunteer-single.html">
                           <img
-                            src={TeamImage3Src}
+                            src={nitesh}
                             alt="volunteer"
+                            style={imgStyle}
                           />
                         </a>
                       </div>
                       <div className="content pos-rel">
                         <h5 className="title">
-                          <a href="volunteer-single.html">Ms. Babita</a>
+                          <a href="volunteer-single.html">Mr. Nitesh</a>
                         </h5>
                         <span>Volunteer</span>
                       </div>
@@ -971,14 +995,15 @@ const HomePage = () => {
                       <div className="thumb">
                         <a href="volunteer-single.html">
                           <img
-                            src={TeamImage2Src}
+                            src={tamana}
                             alt="volunteer"
+                            style={imgStyle}
                           />
                         </a>
                       </div>
                       <div className="content pos-rel">
                         <h5 className="title">
-                          <a href="volunteer-single.html">Mr. Ashish</a>
+                          <a href="volunteer-single.html">Ms. Tamana</a>
                         </h5>
                         <span>Volunteer</span>
                       </div>
@@ -1017,18 +1042,20 @@ const HomePage = () => {
                     </div>
                   </div>
                   <div className="volunteer-item-2 m-3">
-                    <div className="volunteer-thumb">
-                      <div className="thumb">
+                    <div className="volunteer-thumb" >
+                      <div className="thumb" >
                         <a href="volunteer-single.html">
                           <img
-                            src={TeamImage3Src}
+                            src={babita}
                             alt="volunteer"
+                            style={imgStyle}
+                           
                           />
                         </a>
                       </div>
                       <div className="content pos-rel">
                         <h5 className="title">
-                          <a href="volunteer-single.html">Ms. Deepanshi</a>
+                          <a href="volunteer-single.html">Ms. Babita</a>
                         </h5>
                         <span>Volunteer</span>
                       </div>

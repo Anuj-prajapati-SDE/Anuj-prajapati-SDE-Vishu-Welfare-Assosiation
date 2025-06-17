@@ -48,7 +48,7 @@
 }
 
 .breadcrumb li a {
-  color: #92278f;
+  color: rgb(255 153 53);
   text-decoration: none;
 }
 
@@ -115,7 +115,7 @@
 
 .campaign-icon i {
   font-size: 24px;
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-bottom: 10px;
 }
 
@@ -155,17 +155,17 @@
 }
 
 .payment-option:hover {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
 }
 
 .payment-option.active {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
   background-color: rgba(146, 39, 143, 0.05);
 }
 
 .payment-option i {
   font-size: 24px;
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-bottom: 8px;
 }
 
@@ -201,7 +201,7 @@
 
 .form-input input:focus, 
 .form-input textarea:focus {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
   box-shadow: 0 0 0 2px rgba(146, 39, 143, 0.1);
   outline: none;
 }
@@ -215,15 +215,14 @@
 }
 
 .secure-note i {
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-right: 8px;
 }
 
 .donate-button {
-  background-color: #92278f;
+  background-color: #0e2c53;
   color: #fff;
-  border: none;
-  padding: 15px 30px;
+  border: none; 
   font-size: 18px;
   font-weight: 600;
   border-radius: 5px;
@@ -262,7 +261,7 @@
 
 .summary-item .value {
   font-weight: 600;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .tax-info p,
@@ -283,7 +282,7 @@
 }
 
 .why-donate li i {
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-right: 10px;
   margin-top: 3px;
 }
@@ -297,7 +296,7 @@
 }
 
 .contact-info i {
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-right: 10px;
 }
 
@@ -329,13 +328,13 @@
 
 .impact-icon i {
   font-size: 30px;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .impact-box h4 {
   font-size: 36px;
   font-weight: 700;
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-bottom: 10px;
 }
 
@@ -388,7 +387,7 @@
 
 .author-info span {
   font-size: 14px;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .faq-item {
@@ -414,7 +413,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 24px;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .faq-item.active .faq-title::after {
@@ -428,7 +427,7 @@
 }
 
 .faq-item.active .faq-title .title {
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .faq-content {
@@ -561,7 +560,7 @@
 
 .form-section-title i {
   margin-right: 10px;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .form-group {
@@ -587,7 +586,7 @@
 }
 
 .form-control:focus {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
   box-shadow: 0 0 0 2px rgba(146, 39, 143, 0.1);
   outline: none;
 }
@@ -615,18 +614,18 @@
 }
 
 .campaign-option:hover {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
 }
 
 .campaign-option.selected,
 .campaign-option.active {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
   background-color: rgba(146, 39, 143, 0.05);
 }
 
 .campaign-option i {
   font-size: 24px;
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-bottom: 8px;
 }
 
@@ -655,14 +654,14 @@
 }
 
 .amount-option:hover {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
 }
 
 .amount-option.selected,
 .amount-option.active {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
   background-color: rgba(146, 39, 143, 0.05);
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .custom-amount {
@@ -705,18 +704,18 @@
 }
 
 .payment-method:hover {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
 }
 
 .payment-method.selected,
 .payment-option.active {
-  border-color: #92278f;
+  border-color: rgb(255 153 53);
   background-color: rgba(146, 39, 143, 0.05);
 }
 
 .payment-method i {
   font-size: 24px;
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-bottom: 8px;
 }
 
@@ -773,7 +772,7 @@
 
 .summary-value {
   font-weight: 600;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .summary-total {
@@ -794,7 +793,7 @@
 .total-value {
   font-size: 24px;
   font-weight: 700;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .tax-note {
@@ -809,7 +808,7 @@
 
 /* Donate button */
 .donate-btn {
-  background-color: #92278f;
+  background-color: rgb(255 153 53);
   color: #fff;
   font-size: 18px;
   font-weight: 600;
@@ -889,13 +888,13 @@
 
 .impact-icon i {
   font-size: 36px;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .impact-number {
   font-size: 42px;
   font-weight: 700;
-  color: #92278f;
+  color: rgb(255 153 53);
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -970,7 +969,7 @@
 
 .author-info span {
   font-size: 14px;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 /* FAQ Section */
@@ -1005,7 +1004,7 @@
 }
 
 .faq-question:hover {
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .faq-question:after {
@@ -1015,11 +1014,11 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 24px;
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .faq-question.active {
-  color: #92278f;
+  color: rgb(255 153 53);
 }
 
 .faq-question.active:after {

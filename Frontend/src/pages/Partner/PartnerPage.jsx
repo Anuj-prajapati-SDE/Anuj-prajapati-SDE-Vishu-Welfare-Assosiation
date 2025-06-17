@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer';
 import { useInView } from 'react-intersection-observer';
 import './PartnerPage.css';
 import HeroSection from '../../components/HeroSection/HeroSection';
+import banner from "../../assets/images/banners/become-partner.jpg"
 
 const PartnerPage = () => {
   // Animation for elements when they come into view
@@ -220,7 +221,7 @@ const PartnerPage = () => {
       <Navbar />
       <div className="partner-page">
         {/* Hero Banner Section */}
-         <HeroSection Tittle={"Partner With Us"} Heading={" Join hands with Vishu Welfare Association to create meaningful, sustainable impact through strategic partnerships that leverage our collective strengths and resources."} Banner={""}></HeroSection>
+         <HeroSection Tittle={"Partner With Us"} Heading={" Join hands with Vishu Welfare Association to create meaningful, sustainable impact through strategic partnerships that leverage our collective strengths and resources."} Banner={banner}></HeroSection>
   
 
         {/* Why Partner Section */}

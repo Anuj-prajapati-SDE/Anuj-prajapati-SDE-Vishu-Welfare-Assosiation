@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import './DonationStyles.css';
+import banner from "../../assets/images/banners/Donor.jpg"
+import HeroSection from '../../components/HeroSection/HeroSection';
 
 const DonationPage = () => {  const [donationAmount, setDonationAmount] = useState('1000');  // Set default to 1000
   const [customAmount, setCustomAmount] = useState('');
@@ -82,6 +84,7 @@ const DonationPage = () => {  const [donationAmount, setDonationAmount] = useSta
   return ( 
     <>
       <Navbar />
+      <HeroSection Tittle={"Donation"} Heading={"Donate for an Empowered Future"} Banner={banner}/>
       
       {/* ==========Banner Section Starts Here========== */}
       {/* <section
@@ -388,7 +391,7 @@ const DonationPage = () => {  const [donationAmount, setDonationAmount] = useSta
                         <label htmlFor="anonymous">Make this donation anonymous</label>
                       </div>
                       
-                      <div className="form-input checkbox-input">
+                      <div className="form-input checkbox-input" style={{border:"none"}}>
                         <input type="checkbox" id="taxReceipt" name="taxReceipt" />
                         <label htmlFor="taxReceipt">Email me a tax receipt</label>
                       </div>
