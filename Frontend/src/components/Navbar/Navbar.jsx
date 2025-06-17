@@ -6,11 +6,11 @@ const Navbar = () => {
   return (
   <>
   {/* ==========Preloader Overlay Starts Here========== */}
-  <div className="overlayer">
+  {/* <div className="overlayer">
     <div className="loader">
       <div className="loader-inner" />
     </div>
-  </div>
+  </div> */}
   <div className="scrollToTop">
     <i className="fas fa-angle-up" />
   </div>
