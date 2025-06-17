@@ -7,13 +7,16 @@ import Banner from '../../assets/images/banners/banner_5.jpg';
 import { useInView } from 'react-intersection-observer';
 import './LeadershipPage.css';
 import HeroSection from '../../components/HeroSection/HeroSection';
+import ashish from "../../assets/images/teams/ashish.jpg"
+import ankit from "../../assets/images/teams/ankit.jpg"
+import deepanshi from "../../assets/images/teams/deepanshi.jpg"
+import anuj from "../../assets/images/teams/anuj.jpg"
+import binit from "../../assets/images/teams/binit.jpg"
+import anand from "../../assets/images/teams/anand.jpg"
+import avnish from "../../assets/images/leaders/avnish.jpg"
 
 const LeaderShipPage = () => {
-  // Animation for elements when they come into view
-  const [headerRef, headerInView] = useInView({
-    threshold: 0.2,
-    triggerOnce: true
-  });
+
 
   const [introRef, introInView] = useInView({
     threshold: 0.2,
@@ -25,111 +28,51 @@ const LeaderShipPage = () => {
     triggerOnce: true
   });
 
-  const [advisoryRef, advisoryInView] = useInView({
-    threshold: 0.2,
-    triggerOnce: true
-  });
 
-  const [joinRef, joinInView] = useInView({
-    threshold: 0.2,
-    triggerOnce: true
-  });
 
   // Executive team data
   const executiveTeam = [
     {
-      name: "Ajay Verma",
-      position: "President & CEO",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "With over 15 years of experience in non-profit leadership, Ajay has led transformative social initiatives across India. His vision drives our strategic direction.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      name: "Ankit Gupta",
+      position: "Founder & CEO",
+      image: `${ankit}`,
+      bio: "With over 20 + years of experience in non-profit leadership, Ankit Gupta has led transformative social initiatives across India. As the visionary Founder and CEO, he drives the organization’s mission and strategic direction with unwavering commitment and purpose.",
+     
     },
     {
-      name: "Priya Sharma",
-      position: "Director of Programs",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "Priya oversees all program development and implementation, ensuring our initiatives create meaningful and measurable impact in communities.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      name: "Avnish Yadav",
+      position: "Founder & CEO",
+      image: `${avnish}`,
+      bio: "With over 20 + years of experience in non-profit leadership, Avnish Yadav has led transformative social initiatives across India. As the visionary Founder and CEO, he drives the organization’s mission and strategic direction with unwavering commitment and purpose.",
+     
     },
     {
-      name: "Rahul Sinha",
-      position: "Chief Financial Officer",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "As CFO, Rahul ensures financial transparency and optimal resource utilization, allowing us to maximize our impact with available resources.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      name: "Binit Kumar",
+      position: "Head CSR & Skilling",
+      image: `${binit}`,
+      bio: "With 15 Year of extensive experience in corporate social responsibility and skills development, Binit Kumar has played a pivotal role in driving impactful initiatives. As the Head of CSR & Skilling, he leads strategic programs that empower communities and foster sustainable growth.",
+     
     },
     {
-      name: "Neha Kapoor",
-      position: "Director of Partnerships",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "Neha builds strategic relationships with organizations, government bodies, and corporate partners to enhance our collective social impact.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      name: "Anand Pandey",
+      position: "Head Corporate Relations",
+      image:`${anand}`,
+      bio: "With over 12 years of expertise in corporate relations and strategic partnerships, Anand Pandey has successfully navigated the intersection of business and social impact. As Head of Corporate Relations, he builds meaningful collaborations that enhance corporate engagement and drive sustainable initiatives.",
+     
     },
     {
-      name: "Vikram Singh",
-      position: "Director of Operations",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "Vikram ensures that our day-to-day operations run smoothly, implementing systems that allow us to deliver consistently excellent service.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      name: "Deepanshi Jain",
+      position: "Head of Human Resources",
+      image: `${deepanshi}`,
+      bio: "Deepanshi Jain is a dynamic leader dedicated to fostering a positive and inclusive workplace culture. As the Head of Human Resources, she leads strategic initiatives that enhance employee engagement, organizational growth, and talent development.",
+     
     },
     {
-      name: "Meera Patel",
-      position: "Head of Communications",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "Meera leads our communications strategy, ensuring our message reaches those who need our services and those who can help support our mission.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
-    }
-  ];
-
-  // Advisory board data
-  const advisoryBoard = [
-    {
-      name: "Dr. Ramesh Kumar",
-      position: "Public Health Advisor",
-      image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "Dr. Kumar brings expertise in public health policy and implementation, guiding our healthcare initiatives."
-    },
-    {
-      name: "Anita Desai",
-      position: "Education Specialist",
-      image: "https://images.unsplash.com/photo-1544717305-996b815c338c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "With 20+ years in education reform, Anita advises on our educational programs and policy advocacy."
-    },
-    {
-      name: "Rajiv Mehta",
-      position: "Corporate Sustainability Expert",
-      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "Rajiv helps bridge our work with corporate social responsibility initiatives and sustainable development goals."
-    },
-    {
-      name: "Sunita Rao",
-      position: "Women Empowerment Advocate",
-      image: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      bio: "Sunita guides our women-focused initiatives, ensuring they create genuine pathways to empowerment."
+      name: "Ashish Mishra",
+      position: "Technical Lead",
+      image: `${ashish}`,
+      bio: "As a skilled Technical Lead, Ashish Mishra drives innovation and efficiency in software development. He leads teams in delivering high-quality technical solutions, fostering collaboration, and implementing cutting-edge technologies to optimize performance and scalability.",
+     
     }
   ];
 
@@ -202,15 +145,7 @@ const LeaderShipPage = () => {
                       <img src={member.image} alt={member.name} />
                       <div className="executive-card-overlay"></div>
                       <div className="executive-card-social">
-                        <a href={member.social.linkedin} className="social-icon">
-                          <i className="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href={member.social.twitter} className="social-icon">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href={member.social.email} className="social-icon">
-                          <i className="far fa-envelope"></i>
-                        </a>
+                       
                       </div>
                     </div>
                     <div className="executive-card-content">

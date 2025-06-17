@@ -7,6 +7,11 @@ import { motion } from "framer-motion";
 import Who_We_Are_Img from '../../assets/images/gallery/23.jpg'
 import Banner_img from '../../assets/images/banners/banner_2.jpg';
 import { useInView } from "react-intersection-observer";
+import Ankit from "../../assets/images/leaders/ankit.jpg";
+import Binit from "../../assets/images/leaders/binit.jpg"
+import Avnish from "../../assets/images/leaders/avnish.jpg"
+import Anand from "../../assets/images/leaders/anand.jpg"
+
 import "./AboutPage.css";
 
 const AboutPage = () => {
@@ -115,46 +120,30 @@ const AboutPage = () => {
   ];
 
   // Team data
-  const teamData = [
+ const teamData = [
     {
-      name: "Amit Sharma",
+      name: "Ankit Gupta",
       position: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      image: `${Ankit}`,
+     
     },
     {
-      name: "Priya Patel",
-      position: "Program Director",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      name: "Awneesh Yadav",
+      position: "Founder & CEO",
+      image:`${Avnish}`,
+     
     },
     {
-      name: "Rajesh Kumar",
-      position: "Operations Head",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      name: "Binit Kumar",
+      position: "Head CSR & Skilling",
+      image: `${Binit}`,
+     
     },
     {
-      name: "Meera Singh",
-      position: "Finance Director",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "#"
-      }
+      name: "Anand Pandey",
+      position: "Head Corporate Relations",
+      image: `${Anand}`,
+     
     }
   ];
 
@@ -408,15 +397,7 @@ const AboutPage = () => {
                         <img src={member.image} alt={member.name} className="team-image" />
                         <div className="team-overlay">
                           <div className="team-social">
-                            <a href={member.social.linkedin} className="social-link">
-                              <i className="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href={member.social.twitter} className="social-link">
-                              <i className="fab fa-twitter"></i>
-                            </a>
-                            <a href={member.social.email} className="social-link">
-                              <i className="far fa-envelope"></i>
-                            </a>
+                           
                           </div>
                         </div>
                       </div>
