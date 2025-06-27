@@ -80,7 +80,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a>About</a>
                 <ul className="submenu">
                   <li>
                     {" "}
@@ -102,7 +102,8 @@ const Navbar = () => {
                 <a  className="active">
                   Get Involve
                 </a>
-                  <ul className="submenu">                  <li>
+                  <ul className="submenu">
+                    <li>
                     {" "}
                     <a href="/partner-with-us">Partner with us </a>
                   </li>
@@ -138,7 +139,7 @@ const Navbar = () => {
               <span />
               <span />
               <span />
-            </div>
+            </div> 
             {/* <div class="d-none d-sm-block">
                       <div class="search-cart d-flex align-items-center flex-wrap">
                           <div class="search-button">
