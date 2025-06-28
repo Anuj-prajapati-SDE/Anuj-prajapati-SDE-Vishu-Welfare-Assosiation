@@ -17,6 +17,7 @@ import VolunterPage from './components/volunter/VolunterPage';
 import PartnerPage from './pages/Partner/PartnerPage';
 import OurWorkArea from './pages/OurWorkArea/OurWorkArea';
 import Careers from './pages/Careers/CareersPage';
+import AdminDashboard from './pages/Admin/AdminDashboard';
 function App() {
 
   return (
@@ -40,8 +41,11 @@ function App() {
               <Route path="/donate" element={<DonationPage/>} />
               <Route path="/partner-with-us" element={<PartnerPage/>} />
 
-              <Route path="*" element={<ErrorPage/>} />
+              {/* Admin routes */}
+              <Route path="/admin" element={<AdminDashboard/>} />
+              <Route path="/admin/*" element={<AdminDashboard/>} />
 
+              <Route path="*" element={<ErrorPage/>} />
 
             </Routes>     
       </Router>

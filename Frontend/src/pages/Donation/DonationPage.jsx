@@ -189,7 +189,7 @@ const DonationPage = () => {
               initiatives, and food programs.
             </p>
           </div>
-
+ 
           <div className="row">
             <div className="col-lg-8">
               <div className="donation-form-wrapper">
