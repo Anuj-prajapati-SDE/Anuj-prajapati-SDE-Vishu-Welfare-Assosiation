@@ -1,10 +1,17 @@
 const Blog= require('../models/Blogs');
 const { upload } = require('../middleware/upload');
+const fs = require('fs');
+const path = require('path');
+const { deleteImageFromServer } = require('../helper/deleteImageFromServer');
 
 const createBlog = async (req, res) => {
     try {
         const { title, content, category } = req.body;
         const file = req.file;
+
+        if (!title || !content || !category) {
+            return res.status(400).json({ message: 'Title, content, and category are required' });
+        }
 
         if (!file) {
             return res.status(400).json({ message: 'No file uploaded' });
@@ -46,6 +53,14 @@ const deleteBlog = async (req, res) => {
         if (!blog) {
             return res.status(404).json({ message: 'Blog not found' });
         }
+
+        const deletedImagePath = blog.imageUrl.split('/').pop();
+         // Assuming the image is stored as .jpg
+         const deleteBlogError=await deleteImageFromServer(deletedImagePath);
+        if (deleteBlogError) {
+            return res.status(500).json({ message: 'Error deleting image file'+ deleteBlogError.message });
+        }
+
         res.status(200).json({ message: 'Blog deleted successfully' });
     } catch (err) {
         console.error(err);
@@ -72,6 +87,12 @@ const updateBlog = async (req, res) => {
 
         // If a new file is uploaded, update the imageUrl
         if (file) {
+            // Delete the old image file from the server
+            const oldImagePath = blog.imageUrl.split('/').pop();
+            const deleteOldImageError = await deleteImageFromServer(oldImagePath);
+            // if (deleteOldImageError) {
+            //     return res.status(500).json({ message: 'Error deleting old image file' + deleteOldImageError.message });
+            // }
             blog.imageUrl = `/uploads/${file.filename}`;
         }
 

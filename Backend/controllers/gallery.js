@@ -1,6 +1,8 @@
 const Gallery=require('../models/Gallery');
 const User = require('../models/User');
 const {upload} = require('../middleware/upload'); 
+const fs = require('fs');
+const path = require('path');
 
 
 const createGalleryItem = async (req, res) => { 
@@ -50,8 +52,57 @@ const getGalleryImages = async (req, res) => {
         res.status(500).json({ message: 'Error fetching gallery images', error: err.message });
     }
 };
+const deleteGalleryImages = async (req, res) => {
+  try {
+    let { ids } = req.body;
+
+    if (!ids || !Array.isArray(ids) || ids.length === 0) {
+      return res.status(400).json({ message: "No image data provided" });
+    }
+
+    const idList = ids.map(item => item._id);
+    const imagePaths = ids.map(item => path.join( "./uploads", path.basename(item.imageUrl)));
+
+    // Step 1: Try deleting from DB first
+    const result = await Gallery.deleteMany({ _id: { $in: idList } });
+
+    if (result.deletedCount === 0) {
+      return res.status(404).json({ message: "No matching records found in DB" });
+    }
+
+    // Step 2: Try deleting local files (non-critical if fails)
+    const failedFiles = [];
+
+    await Promise.all(imagePaths.map(filePath =>
+      new Promise(resolve => {
+        fs.unlink(filePath, err => {
+          if (err) {
+            console.error(`Failed to delete file ${filePath}:`, err.message);
+            failedFiles.push(filePath);
+          } else {
+            console.log(`Deleted file: ${filePath}`);
+          }
+          resolve();
+        });
+      })
+    ));
+
+    // Step 3: Final response
+    res.status(200).json({
+      message: "Images deleted from DB",
+      deletedCount: result.deletedCount,
+      fileDeleteFailures: failedFiles,
+    });
+
+  } catch (err) {
+    console.error("Deletion failed:", err);
+    res.status(500).json({ message: "Internal server error", error: err.message });
+  }
+};
+
 
 module.exports = {
   createGalleryItem,
-  getGalleryImages
+  getGalleryImages,
+  deleteGalleryImages
 };
